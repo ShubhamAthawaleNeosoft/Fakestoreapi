@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakestoreapi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
+        integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="side-nav position-fixed pt-3 ps-3 ">
+        <h4>Category</h4>
+        <ul class="list-unstyled pt-2">
+            <li><a id="mens-clothing"><i class="bi bi-emoji-sunglasses pe-2"></i>Men's clothing</a></li>
+            <li><a id="womens-clothing"><i class="bi bi-emoji-laughing pe-2"></i>Women's clothing</a></li>
+            <li><a id="jewelery"><i class="bi bi-sunglasses pe-2"></i>Jewelery</a></li>
+            <li><a id="electronics"><i class="bi bi-headphones pe-2"></i>Electronics</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="d-flex align-items-center justify-content-between bg-light px-2 py-2 fixed-top shadow">
+            <h3 class="ps-2">FakeStore</h3>
+            <a id="cart-icon" class="pe-5 cart-icon"><i class="bi bi-cart"></i></a>
+        </div>
+        <div class="contain">
+            <div id="target" class="px-3 d-flex gap-3 flex-wrap">
+
+            </div>
+        </div>
+    </main>
+
+    <div id="cart-model" class="cart position-fixed text-white px-3 py-4 hide">
+        <div class="d-flex justify-content-between">
+            <h4>Cart</h4>
+            <a id="cart-close"><i class="bi bi-x-circle"></i></a>
+        </div>
+        <table class="table text-white">
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
